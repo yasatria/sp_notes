@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_fighal3"
-    >
+    tools:context=".HalTigaActivity">
 
 
     <TextView
@@ -23,7 +23,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintVertical_bias="0.153"/>
 
     <ImageView
         android:id="@+id/babel"
@@ -33,8 +33,7 @@
         app:layout_constraintTop_toBottomOf="@id/allnotes"
         app:layout_constraintBottom_toTopOf="@id/button"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_notes"
@@ -47,9 +46,7 @@
         android:layout_marginRight="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginBottom="60dp"
-        android:layout_marginTop="60dp"
-
-         />
+        android:layout_marginTop="60dp"/>
 
     <Button
         android:id="@+id/button"
@@ -67,23 +64,21 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        android:onClick="handleHalTiga"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="160dp" />
+        app:layout_constraintGuide_begin="160dp"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="340dp" />
-
-
-
+        app:layout_constraintGuide_begin="340dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
