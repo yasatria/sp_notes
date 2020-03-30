@@ -50,7 +50,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            judulText = itemView.findViewById(R.id.et_title);
+            judulText = itemView.findViewById(R.id.layout_title);
         }
     }
 }
