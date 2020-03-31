@@ -12,10 +12,22 @@ public class HalSatuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_halsatu);
+
+        Thread thread = new Thread() {
+            public void run(){
+                try {
+                    sleep(2000);
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                } finally {
+                    Intent intent = new Intent (HalSatuActivity.this, HalDuaActivity.class);
+                    startActivity(intent);
+
+                    finish();
+                }
+            }
+        };
+        thread.start();
     }
 
-    public void handleHalSatu(View view) {
-        Intent intent = new Intent(this,HalDuaActivity.class);
-        startActivity(intent);
-    }
 }
