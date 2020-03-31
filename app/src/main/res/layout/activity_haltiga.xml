@@ -12,10 +12,9 @@
         android:id="@+id/allnotes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:fontFamily="@font/montserrat_semi_bold"
         android:text="All Notes"
-        android:textColor="#FFB700"
+        android:textColor="#ffffff"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/guideline3"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -24,6 +23,22 @@
         android:layout_marginBottom="55dp"
         android:layout_marginRight="155dp"
         android:layout_marginLeft="55dp"/>
+
+    <TextView
+        android:id="@+id/tomake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="To create a new note please press the + button"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="4dp"
+        />
 
     <ImageView
         android:id="@+id/babel"
