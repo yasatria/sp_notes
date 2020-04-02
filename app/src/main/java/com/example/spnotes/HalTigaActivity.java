@@ -15,7 +15,7 @@ public class HalTigaActivity extends AppCompatActivity {
     }
 
     public void handleHalTiga(View view) {
-        Intent intent = new Intent(this,HalEmpatActivity.class);
+        Intent intent = new Intent(this,HalDuaActivity.class);
         startActivity(intent);
     }
 }
